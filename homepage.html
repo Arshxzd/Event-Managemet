@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planning an Event</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #fff;
+            padding: 10px 30px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header .logo img {
+            height: 60px;
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .home {
+            height: 100vh;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: midnightblue;
+        }
+
+        .home .img1 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .home .main {
+            font-size: 2.5rem;
+            z-index: 1;
+        }
+
+        .con {
+            font-size: 3rem;
+            margin-top: 20px;
+            color: midnightblue;
+            text-align: center;
+        }
+
+        .services {
+            padding: 50px 20px;
+            background: #f9f9f9;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-around;
+        }
+
+        .service {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            width: 30%;
+            min-width: 250px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .service h2 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .box {
+            background-color: darkgray;
+            padding: 40px 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .box > div {
+            flex: 1 1 30%;
+            min-width: 250px;
+            padding: 10px;
+        }
+
+        .head1 h2,
+        .link h2,
+        .dial {
+            text-decoration: underline;
+            color: #222;
+            margin-bottom: 10px;
+        }
+
+        .p1,
+        .linkcontent ul,
+        .dial1,
+        .align {
+            font-size: 1.1rem;
+            color: #333;
+        }
+
+        .linkcontent ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .linkcontent ul li {
+            margin-bottom: 8px;
+        }
+
+        .social {
+            margin-top: 20px;
+            font-size: 1.8rem;
+        }
+
+        .social i {
+            margin-right: 15px;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+
+        .social i:hover {
+            color: midnightblue;
+        }
+
+        @media (max-width: 768px) {
+            .service {
+                width: 100%;
+            }
+
+            .box {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <a href="#" class="logo">
+            <img src="beautiful-archway-decorated-with-floral-composition-outdoors.jpg" alt="Logo">
+        </a>
+        <nav class="navbar">
+            <ul>
+                <li><a href="homepage.html">HOME</a></li>
+                <li><a href="aboutus.html">ABOUT US</a></li>
+                <li><a href="whatwedo.html">WHAT WE DO</a></li>
+                <li><a href="weddingservices.html">WEDDING SERVICES</a></li>
+                <li><a href="Destination.html">DESTINATIONS</a></li>
+                <li><a href="Memories.html">MEMORIES</a></li>
+                <li><a href="reachus.html">REACH US</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="home">
+        <img src="beautiful-arrangement-with-cages-hanging.jpg" alt="Event Image" class="img1">
+        <div class="main">Bringing dreams to life, with a sprinkle of cuteness.</div>
+    </section>
+
+    <!-- Welcome Section -->
+    <section style="text-align: center; padding: 40px 20px; background-color: #fff;">
+        <h2 style="color: midnightblue;">Welcome to V3 Events & Weddings</h2>
+        <p style="max-width: 800px; margin: 20px auto; font-size: 1.2rem; color: #555;">
+            At V3 Events, we believe every event should be as unique as you are. From corporate conferences to luxury weddings, our team is dedicated to turning your vision into an unforgettable experience. Let's make memories together.
+        </p>
+    </section>
+
+    <h1 class="con">Event Management Services</h1>
+
+    <section class="services">
+        <div class="service">
+            <h2>Corporate</h2>
+            <p>Corporate Event Management</p>
+            <p>V3 Events can be your one-stop event management provider for corporate events. We offer tailor-made services to fit your business needs.</p>
+        </div>
+        <div class="service">
+            <h2>Seminar</h2>
+            <p>Seminars and Conferences</p>
+            <p>We organize seminars and conferences with precision and professionalism for impactful business communication.</p>
+        </div>
+        <div class="service">
+            <h2>Brand</h2>
+            <p>Brand Promotion</p>
+            <p>From event booths to full-scale promotion, V3 helps you grow brand visibility and engage audiences effectively.</p>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section style="padding: 50px 20px; background-color: #f0f0f0; text-align: center;">
+        <h2 style="color: midnightblue;">Why Choose V3 Events?</h2>
+        <div style="display: flex; flex-wrap: wrap; gap: 30px; justify-content: center; margin-top: 30px;">
+            <div style="max-width: 300px;">
+                <i class="fas fa-star" style="font-size: 2rem; color: gold;"></i>
+                <h3>Professional Expertise</h3>
+                <p>Our experienced team ensures your event runs smoothly from start to finish.</p>
+            </div>
+            <div style="max-width: 300px;">
+                <i class="fas fa-heart" style="font-size: 2rem; color: red;"></i>
+                <h3>Personalized Approach</h3>
+                <p>Every event is tailored to your needs and preferences for a truly personal touch.</p>
+            </div>
+            <div style="max-width: 300px;">
+                <i class="fas fa-globe" style="font-size: 2rem; color: green;"></i>
+                <h3>Global Reach</h3>
+                <p>We manage events at stunning locations across India and beyond.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section style="padding: 50px 20px; background: #fff; text-align: center;">
+        <h2 style="color: midnightblue;">What Our Clients Say</h2>
+        <div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; margin-top: 30px;">
+            <blockquote style="max-width: 300px; font-style: italic; color: #444;">"V3 made our dream wedding a reality! Everything was flawless."</blockquote>
+            <blockquote style="max-width: 300px; font-style: italic; color: #444;">"Professional, creative, and friendly – the best event planners!"</blockquote>
+            <blockquote style="max-width: 300px; font-style: italic; color: #444;">"The branding event was a hit – thanks to V3's expert touch!"</blockquote>
+        </div>
+    </section>
+
+    <!-- Gallery Preview Section -->
+    <section style="padding: 50px 20px; background: #f9f9f9; text-align: center;">
+    <h2 style="color: midnightblue;">Our Work in Action</h2>
+    <div style="display: flex; gap: 15px; flex-wrap: wrap; justify-content: center; margin-top: 30px;">
+        <img src="pic1.jpg" alt="Event 1" style="width: 200px; height: 150px; object-fit: cover; border-radius: 8px;">
+        <img src="beautiful-arrangement-with-cages-hanging.jpg" alt="Event 2" style="width: 200px; height: 150px; object-fit: cover; border-radius: 8px;">
+        <img src="DECORTION PIC.jpg" alt="Event 3" style="width: 200px; height: 150px; object-fit: cover; border-radius: 8px;">
+    </div>
+    <p style="margin-top: 20px;"><a href="Memories.html" style="color: midnightblue; text-decoration: underline;">View Full Gallery</a></p>
+</section>
+
+
+    <!-- Inquiry Form -->
+    <section style="padding: 50px 20px; background-color: #fff; text-align: center;">
+        <h2 style="color: midnightblue;">Get in Touch</h2>
+        <form style="max-width: 500px; margin: 30px auto; display: flex; flex-direction: column; gap: 15px;">
+            <input type="text" placeholder="Your Name" style="padding: 10px;">
+            <input type="email" placeholder="Your Email" style="padding: 10px;">
+            <textarea placeholder="Your Message" rows="4" style="padding: 10px;"></textarea>
+            <button type="submit" style="padding: 10px; background: midnightblue; color: white; border: none;">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Upcoming Events Section -->
+    <section style="background: #e6f0ff; padding: 40px 20px; text-align: center;">
+        <h2 style="color: midnightblue;">Upcoming Highlights</h2>
+        <p style="margin: 20px auto; font-size: 1.1rem; max-width: 700px;">Don't miss our upcoming luxury beach wedding in Goa this June! Stay tuned for more updates.</p>
+    </section>
+
+    <!-- Footer -->
+    <section class="box">
+        <div class="head1">
+            <h2>V3 EVENTS & WEDDINGS</h2>
+            <p class="p1">V3 Events and Entertainments Pvt Ltd is passionate about crafting charmingly timeless and elegant luxurious weddings and events at stunning venues across the world.</p>
+        </div>
+        <div class="link">
+            <h2>LINKS</h2>
+            <div class="linkcontent">
+                <ul>
+                    <li>Home</li>
+                    <li>About Us</li>
+                    <li>Reach us</li>
+                    <li>Corporate Event</li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <h2 class="dial">CONTACT US</h2>
+            <p class="dial1">V3 Events,<br>Near Park Station Asam.</p>
+            <p class="align">Email: info@v3events.in</p>
+            <div class="social">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-pinterest"></i>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
