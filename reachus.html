@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="ISO-8859-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V3 Events Contact</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: aqua;
+        }
+
+        .reach {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .boxContainer1 {
+            width: 100%;
+            height: 300px;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+        .boxContainer1 img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="phone"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        .footer {
+            background-color: darkgray;
+            padding: 40px 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            color: #000;
+        }
+
+        .footer div {
+            flex: 1 1 30%;
+            padding: 10px;
+        }
+
+        .footer h2 {
+            text-decoration: underline;
+        }
+
+        .linkcontent ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .linkcontent li {
+            margin-bottom: 5px;
+        }
+
+        .social-icons i {
+            margin: 10px;
+            font-size: 24px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <section class="reach" id="reach">
+        <h1>Contact Us</h1>
+        <div class="boxContainer1">
+            <img src="beautiful-arrangement-with-cages-hanging.jpg" alt="Event Image">
+        </div>
+
+        <form action="/test/eventbooking" method="post">
+            <table>
+                <tr>
+                    <td><input type="text" name="fullname" placeholder="Full Name" required></td>
+                </tr>
+                <tr>
+                    <td><input type="email" name="EmailAddress" placeholder="Email Address" required></td>
+                </tr>
+                <tr>
+                    <td><input type="phone" name="Phoneno" placeholder="Phone No" required></td>
+                </tr>
+                <tr>
+                    <th>Event Type*</th>
+                </tr>
+                <tr>
+                    <td>
+                        <select name="dropdown" required>
+                            <option value="Wedding">Wedding</option>
+                            <option value="Special Occasion">Special Occasion</option>
+                            <option value="Other Event">Other Event</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="date" name="EventDate" required></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="EventVenue" placeholder="Event Venue" required></td>
+                </tr>
+                <tr>
+                    <th>How did you hear about us?*</th>
+                </tr>
+                <tr>
+                    <td>
+                        <select name="dropdown1" required>
+                            <option value="Instagram">Instagram</option>
+                            <option value="A Friend">A Friend</option>
+                            <option value="While surfing the net">While surfing the net</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <textarea name="experience" rows="5" placeholder="We love to create personal experiences. Tell us your story!" required></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="BOOK NOW"></td>
+                </tr>
+            </table>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div>
+            <h2>V3 EVENTS & WEDDINGS</h2>
+            <p>
+                V3 Events and Entertainments Pvt Ltd is passionate about crafting charmingly timeless 
+                and elegant luxurious weddings and events at stunning venues throughout the world. 
+                As the leading wedding designers and event organisers in Delhi and Gurgaon, we are renowned 
+                to create authentic experiences.
+            </p>
+        </div>
+
+        <div class="linkcontent">
+            <h2>LINKS</h2>
+            <ul>
+                <li>Home</li>
+                <li>About Us</li>
+                <li>Reach Us</li>
+                <li>Corporate Event</li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>CONTACT US</h2>
+            <p>V3 Events, Near Park Station Asam.</p>
+            <p>Email: info@v3events.in</p>
+            <div class="social-icons">
+                <!-- Include Font Awesome for icons -->
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-pinterest"></i>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Font Awesome CDN -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>
